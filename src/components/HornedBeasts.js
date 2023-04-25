@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 
 function HornedBeast(props) {
+    const [favorites, setFavorites] = useState(0);
     return (
         <div className="horned-beast">
             <h2>{props.title}</h2>
