@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 
 function HornedBeast(props) {
     const [favorites, setFavorites] = useState(0);
+
+    const handleClick = () => {
+        setFavorites(favorites + 1);
+    }
     return (
         <div className="horned-beast">
             <h2>{props.title}</h2>
